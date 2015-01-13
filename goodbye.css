@@ -197,11 +197,17 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	display: flex;
 }
 
+.innertitle h3 {
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-start;
+}
+
 .calendartitle {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	align-items: flex-end;
+	/*align-items: flex-end;*/
 	justify-content: flex-start;
 }
 
@@ -209,6 +215,10 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	width: 60px;
 	height: 60px;
 	margin-right: 20px;
+}
+
+.calendarimage {
+	margin-top: -20px;
 }
 
 .articleTitle {
@@ -219,6 +229,10 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	background-color: #d6f5f5;
 }
 
-.white {
+/*.white {
 	background-color: #d1c2b2;
+}*/
+
+.widget {
+	padding-bottom: 20px;
 }
