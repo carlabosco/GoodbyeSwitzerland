@@ -14,15 +14,17 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 		box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
 		display: block;
 		position: flex; /*When set to fixed, content does't overflow.*/
-		width: 100%;
+		width: 80%;
+		margin:0px auto;
 		z-index: 1000;
+		box-shadow:0px 5px 10px #1c1c1c;
 	}
 	
 	header > nav > ul {
 		display: flex;
 		flex-wrap: wrap;
 		/*justify-content: flex-start;*/
-		justify-content: space-around;
+		justify-content: space-between;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -112,6 +114,7 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	  margin: 4px 0 0;  
   }
 }
+
 .images { 
 	font-size: 0; display: flex; flex-flow: row wrap;
 	align-items: stretch; /*Takes up all vertical space inside images div*/
@@ -121,6 +124,11 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	flex: auto;
 	width: 200px; }
 .images > * img { width: 100%; height: auto; }
+
+
+.images  a:hover {
+    display: block;
+}
 
 .title {
 	padding: 2%;
@@ -136,26 +144,27 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 }
 
 .title h2 {
-	font-size: 22px;
+	font-size: 20px;
 	padding-left: 30px;
 	color: #777777;
 	font-family: verdana;
+	margin-top: 10px;
 }
 
 #intro {
 	background-color: #777777;
 	color: white;
-	font-size: 20px;
+	font-size: 17px;
 }
 
 #introtext {
-	padding-left: 1%;
-	padding-right: 1%;
+	margin-left: 3%;
+	margin-right: 3%;
 	padding-bottom: 1%;
 }
 
 .span {
-	font-size: 26px;
+	font-size: 24px;
 	font-family: courier new;
 	font-weight: bold;
 	background-color: white;
@@ -164,7 +173,7 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 
 .content {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: flex-start; /*vertical align*/
 	flex-wrap: wrap;
 	width: 100%;
@@ -178,19 +187,22 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin-left: 3%;
 }
 
 .right {
-	/*width: 45%;*/
+	width: 45%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+	margin-left: 3%;
+	margin-right: 2%;
 }
 
 .innertitle {
 	/*text-align: center;*/
 	font-family: courier new;
-	font-size: 35px;
+	font-size: 29px;
 	padding-bottom: 20px;
 	color: rgba(58,162,173,1);
 	font-weight: bold;
@@ -222,7 +234,8 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 }
 
 .articleTitle {
-	padding-top: 20px;
+	margin-top: 20px;
+	margin-left: 0;
 }
 
 .blue {
@@ -235,4 +248,10 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 
 .widget {
 	padding-bottom: 20px;
+}
+
+.books {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
 }
