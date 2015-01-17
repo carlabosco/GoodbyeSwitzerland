@@ -146,7 +146,7 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 .title h2 {
 	font-size: 20px;
 	padding-left: 30px;
-	color: #777777;
+	color: #B8760E;
 	font-family: verdana;
 }
 
@@ -183,7 +183,7 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 }
 
 .left {
-	width: 45%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -196,9 +196,36 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	margin-left: 10%;
+	margin-left: 7%;
 	/*margin-right: 1%;*/
 }
+
+.months {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 40%;
+	padding: 3%;
+
+}
+
+.arrow {
+	margin-top: 300px;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+
+/*.rightArrow {
+	margin-top: 300px;
+	margin-right: 2%;
+
+}
+
+.leftArrow {
+	margin-top: 300px;
+	margin-left: 2%;
+	
+}*/
 
 .innertitle {
 	/*text-align: center;*/
@@ -236,7 +263,6 @@ body { background: #f2f2f2;color: #222;-webkit-font-smoothing: antialiased;font-
 
 .articleTitle {
 	margin-top: 20px;
-	margin-left: 0;
 }
 
 /*.blue {
@@ -281,8 +307,12 @@ footer {
 	color: #777777;
 	font-size: 12px;
 	margin-top: 30px;
+	color: white;
 }
 
+footer a {
+	color: white;
+}
 
 /*Tooltip*/
 
@@ -293,45 +323,49 @@ a.tooltips {
 a.tooltips span {
   position: absolute;
   width:440px;
-  color: #777777;
+  color: #000000;
   background: #FFFFFF;
   border: 2px solid #36C2B6;
   height: 150px;
-  line-height: 30px;
-  text-align: center;
+  line-height: 20px;
+  text-align: left;
   visibility: hidden;
-  border-radius: 10px;
-  padding-left: 3px;
+  border-radius: 6px;
+  padding: 3px;
 }
 a.tooltips span:before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -12px;
+  top: 100%;
+  left: 20%;
+  margin-left: -12px;
   width: 0; height: 0;
-  border-right: 12px solid #36C2B6;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
+  border-top: 12px solid #36C2B6;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
 }
 a.tooltips span:after {
   content: '';
   position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -8px;
+  top: 100%;
+  left: 20%;
+  margin-left: -8px;
   width: 0; height: 0;
-  border-right: 8px solid #FFFFFF;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
+  border-top: 8px solid #FFFFFF;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
 }
 a:hover.tooltips span {
   visibility: visible;
   opacity: 0.8;
-  left: 100%;
-  top: 50%;
-  margin-top: -15px;
-  margin-left: 15px;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -76px;
   z-index: 999;
+}
+.contentWraper {
+	overflow-x: scroll;
+    /*width: auto;*/
+    /*white-space: nowrap;*/
 }
 
