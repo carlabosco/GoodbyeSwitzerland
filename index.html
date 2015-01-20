@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <title>Goodbye Switzerland</title>
     <link rel="stylesheet" type="text/css" href="goodbye.css">
+    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="icon" href="CHflag.jpeg" type="image/x-icon">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
-
     <header role="banner">
         <div class="title">
             <div id="maintitle"><h1>Goodbye, Switzerland!</h1></div>  
@@ -37,7 +40,7 @@
                 <div>
                     <ul>
                         <!--<li><a href="#decisions">Decisions, decisions</a></li>-->
-                        <li><a href="#comparisons">Comparisons</a></li>
+                        <li><a href="#comparisons">Compare</a></li>
                     </ul>
                 </div>
         </li>
@@ -90,7 +93,7 @@
 
 <!--CONTENT-->
 <div class="contentWraper">
-
+    <div id="empty"></div>
     <!--1 YEAR-->
     <div class="content section white">
         <div class="left">
@@ -102,16 +105,15 @@
             <p>Moving to another country is a big deal, even more so when you have a family. You might be lucky if you have an entire year to plan your move, and it is certainly doable in a much tighter time frame, but planning ahead is a lot more comfortable, no question.</p><br>
             <p>Knowing that I had only one more year in Switzerland allowed me to be more in touch with the country, more conscious of what I like and dislike about life here, and <b>plan trips to destinations that I won’t be visiting in a long time</b>. Living in the heart of Europe has its perks, so it’s good to take advantage of this while we can. Besides, knowing that this will be your last <i>Chilbi</i> makes the <i>Apfel-Chüechli mit Vanillesauce</i> even tastier.</p>
 
-            <h4 id="comparisons" class="left articleTitle">COMPARISONS</h4>
+            <h4 id="comparisons" class="articletitle">Compare</h4>
             <p>If you are still considering whether or not it’s time to leave Switzerland, it might help to do some comparisons against other cities you have in mind. Now, while it’s hard to decide to move or not to move based on cold data alone - safe and clean don’t always mean happy - running a cost of life comparison on a website like <a href="http://www.numbeo.com/cost-of-living/">Numbeo</a> can certainly help. This is the case especially if you already have a job offer to go somewhere else and you want to know what your new salary will buy you there.
         </div>
 
         <div class="right">
-            <div class="innertitle"><h3>Get the info</h3></div> 
-            <br> 
+            <div class="articletitle"><h4>Get The Info</h4></div> 
             <p>Reading about the relocation process and my future home was a great way
                 to gear up for the changes ahead, not only for practicalities, like getting familiar with a new measure system, but also for learning about cultural nuances.<br> 
-                <br>The final weeks before moving can feel a little overwhelming, so you might want to get started with your reading in the beginning of the process.</p>
+                <br>The final months before moving can feel a little overwhelming, so you might want to get started with your reading in the beginning of the process.</p>
                 <br><p>I have personally read most of the books that I recommend here, but <a href="mailto:carlabosco@gmail.com">drop me a line</a> if you have other suggestions.</p>
 
             <div class="books">
@@ -132,7 +134,7 @@
         </div>
 
         <div class="arrow">
-            <a href="6months.html#6months"><img src="go-right.png" style="width:80px"></a>
+            <a href="6months.html#empty"><img src="go-right.png" style="width:80px"></a>
         </div>
     </div>
 </div> <!--end contentWraper-->
@@ -144,9 +146,31 @@
     with my husband and our cat. Six years and two beautiful children later, we have decided to go
     for a new adventure in the US. The information gathered here reflects my own experience and needs,
     but I would be happy to include suggestions of content that may be helpful for other expats.</span></a></p>
+    <p id="lastModMessage"></p>
 </footer>
 
 </header>
+
+
+<!--Time lapse message-->
+<script>
+    var lastmod = new Date(Date.parse(document.lastModified));
+    var timeDelta = new Date() - lastmod;
+    var day = 86400000;
+    var daysGone = timeDelta/day; 
+    if(daysGone < day) {
+    var message = "Last update: today";
+    }
+
+    else if(daysGone > (2*day)) {
+      var message = "Last update: " + daysGone + "days ago";
+        }
+
+$("#lastModMessage").prepend(message);
+        
+</script>
+
+
 
 
 <!--Arrow hover effect-->
